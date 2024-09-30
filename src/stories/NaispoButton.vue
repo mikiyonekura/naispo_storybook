@@ -15,7 +15,7 @@ const props = defineProps({
     },
     frameColor: {
         type: String,
-        default: '#13957b'
+        default: '#000'
     }
 });
 </script>
@@ -26,10 +26,10 @@ const props = defineProps({
 
 <style scoped>
 .buttons {
-    padding: 3%;
-    border-radius: 16px;
-    border: 2px solid v-bind(frameColor);
-    box-shadow: 1px 2px 0 #000;
+    padding: 5%;
+    border-radius: 8px;
+    border: 0.5px solid #aca8a8;
+    box-shadow: 3px 3px 3px rgba(43, 34, 34, 3.5) ;
     font-size: v-bind(fontSize);
     background-color: v-bind(backgroundColor);
 }

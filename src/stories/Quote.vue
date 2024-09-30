@@ -3,11 +3,6 @@ import { defineProps, ref, onMounted } from 'vue';
 import VTypical from 'vue-typical';
 import NaispoButton from './NaispoButton.vue';
 
-const mockMessages = [
-'みんな今日は奈良先端大へようこそ！',
-'ぼくは、奈良先端大マスコットキャラクター『NASURA(ナスラ)』だよーよろしくね',
-'今日はみんなにとっておきの実験ショーを見せたくて、会いに来たんだ',
-];
 
 const isTyping = ref(true);
 const text_num = ref(0);
@@ -15,6 +10,14 @@ const props = defineProps({
     fontSize: {
         type: String,
         default: '25px'
+    },
+    mockedQuote: {
+        type: Array,
+        default: () => [
+            'こんにちは！',
+            '私はナイスポです。',
+            'よろしくお願いします！'
+        ]
     }
 });
 
@@ -42,17 +45,17 @@ function changeText() {
 </script>
 
 <template>
-    <div class="contents" :style="{ fontSize: props.fontSize }">
+    <div :style="{ fontSize: props.fontSize }">
         <div class="human">
             <img style="width: 100%;" :src="'./nasura.png'">
         </div>
 
         <div>
             <div class="script" v-if="isTyping">
-                <v-typical :steps="mockMessages[text_num]" />
+                <v-typical :steps="mockedQuote[text_num]" />
             </div>
             <div class="script" v-else>
-                {{ mockMessages[text_num] }}
+                {{ mockedQuote[text_num] }}
             </div>
         </div>
 
@@ -65,11 +68,6 @@ function changeText() {
 </template>
 
 <style>
-.contents {
-    font-weight: 700;
-    padding:5% 5%;
-    display: block;
-}
 
 .human {
     display: flex;

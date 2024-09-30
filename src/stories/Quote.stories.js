@@ -14,25 +14,32 @@ export default {
 export const Default = {
   args: {
     fontSize: '25px',
-    label: 'ナスラくんのセリフパート',
-    mockedSentence: [
+    mockedQuote: [
       'みんな今日は奈良先端大へようこそ！',
       'ぼくは、奈良先端大マスコットキャラクター『NASURA(ナスラ)』だよーよろしくね',
       '今日はみんなにとっておきの実験ショーを見せたくて、会いに来たんだ',
-      ]
+    ]
   },
 };
 
 export const Small = {
   args: {
     fontSize: '15px',
-    label: 'ナスラくんのセリフパート',
+    mockedQuote: [
+      'みんな今日は奈良先端大へようこそ！',
+      'ぼくは、奈良先端大マスコットキャラクター『NASURA(ナスラ)』だよーよろしくね',
+      '今日はみんなにとっておきの実験ショーを見せたくて、会いに来たんだ',
+    ]
   },
 };
 
 export const Large = {
   args: {
     fontSize: '35px',
-    label: 'ナスラくんのセリフパート',
+    mockedQuote: [
+      'みんな今日は奈良先端大へようこそ！',
+      'ぼくは、奈良先端大マスコットキャラクター『NASURA(ナスラ)』だよーよろしくね',
+      '今日はみんなにとっておきの実験ショーを見せたくて、会いに来たんだ',
+    ]
   },
 };
