@@ -1,9 +1,9 @@
 import { fn } from '@storybook/test';
-import MyPage from './MyPage.vue';
+import F_MyPage from './F_MyPage.vue';
 
 export default {
-  title: 'Example/MyPage',
-  component: MyPage,
+  title: 'F_MyPage/F_MyPage',
+  component: F_MyPage,
   tags: ['autodocs'],
   argTypes: {
     

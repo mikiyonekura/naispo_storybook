@@ -2,7 +2,7 @@ import { fn } from '@storybook/test';
 import MainQuestPanel from './MainQuestPanel.vue';
 
 export default {
-  title: 'Example/MainQuestPanel',
+  title: 'F_MyPage/MainQuestPanel',
   component: MainQuestPanel,
   tags: ['autodocs'],
   argTypes: {
@@ -13,6 +13,6 @@ export default {
 
 export const Default = {
   args: {
-    collectedItems: [true, true, true],
+    collectedItems: [1, 0, 0],
   },
 };

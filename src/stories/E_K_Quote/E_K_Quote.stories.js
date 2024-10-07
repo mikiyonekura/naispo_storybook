@@ -1,28 +1,17 @@
 import { fn } from '@storybook/test';
-import Quote from './Quote.vue';
+import E_K_Quote from './E_K_Quote.vue';
 
 export default {
-  title: 'Example/Quote',
-  component: Quote,
+  title: 'E_K_Quote/E_K_Quote',
+  component: E_K_Quote,
   tags: ['autodocs'],
   argTypes: {
-    fontSize: { control: 'text' }, // Add font size control here
+    fontSize: { control: 'text' }, 
   },
   // args: { onClick: fn() },
 };
 
 export const Default = {
-  args: {
-    fontSize: '25px',
-    mockedQuote: [
-      'みんな今日は奈良先端大へようこそ！',
-      'ぼくは、奈良先端大マスコットキャラクター『NASURA(ナスラ)』だよーよろしくね',
-      '今日はみんなにとっておきの実験ショーを見せたくて、会いに来たんだ',
-    ]
-  },
-};
-
-export const Small = {
   args: {
     fontSize: '15px',
     mockedQuote: [
@@ -33,9 +22,20 @@ export const Small = {
   },
 };
 
+export const Small = {
+  args: {
+    fontSize: '10px',
+    mockedQuote: [
+      'みんな今日は奈良先端大へようこそ！',
+      'ぼくは、奈良先端大マスコットキャラクター『NASURA(ナスラ)』だよーよろしくね',
+      '今日はみんなにとっておきの実験ショーを見せたくて、会いに来たんだ',
+    ]
+  },
+};
+
 export const Large = {
   args: {
-    fontSize: '35px',
+    fontSize: '20px',
     mockedQuote: [
       'みんな今日は奈良先端大へようこそ！',
       'ぼくは、奈良先端大マスコットキャラクター『NASURA(ナスラ)』だよーよろしくね',

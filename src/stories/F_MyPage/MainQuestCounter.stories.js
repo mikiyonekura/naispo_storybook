@@ -2,7 +2,7 @@ import { fn } from '@storybook/test';
 import MainQuestCounter from './MainQuestCounter.vue';
 
 export default {
-  title: 'Example/MainQuestCounter',
+  title: 'F_MyPage/MainQuestCounter',
   component: MainQuestCounter,
   tags: ['autodocs'],
   argTypes: {

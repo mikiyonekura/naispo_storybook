@@ -17,21 +17,21 @@ export default {
 
 export const Default = {
   args: {
-    fontSize: '25px',
+    fontSize: '20px',
     sentence: '文字を入力',
   },
 };
 
 export const forward = {
   args: {
-    fontSize: '25px',
+    fontSize: '20px',
     sentence: '進む',
   },
 };
 
 export const back = {
   args: {
-    fontSize: '25px',
+    fontSize: '20',
     sentence: '戻る',
   },
 };
