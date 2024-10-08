@@ -2,7 +2,6 @@
 import { defineProps } from 'vue';
 import MainQuestCounter from './MainQuestCounter.vue';
 import MainQuestPanel from './MainQuestPanel.vue';
-import NaispoButton from '../NaispoButton.vue';
 
 const collectedItems = [1, 0, 0];
 const mainQuestCount = 3;
