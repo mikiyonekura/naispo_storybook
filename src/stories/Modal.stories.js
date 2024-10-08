@@ -2,7 +2,7 @@ import { fn } from '@storybook/test';
 import Modal from './Modal.vue';
 
 export default {
-  title: 'Example/Modal',
+  title: 'Utility/Modal',
   component: Modal,
   tags: ['autodocs'],
   argTypes: {
@@ -21,7 +21,7 @@ export const Default = {
     title: 'タイトルを入力',
     text: 'テキストを入力',
     buttonText: 'ボタンのテキストを入力',
-    image: 'nasura.png',
+    image: 'nasura_1.png',
     
   },
 };

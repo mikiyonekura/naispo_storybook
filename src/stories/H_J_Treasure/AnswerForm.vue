@@ -5,7 +5,7 @@
 <template>
     <div class="answer_form" >
         <input type="text" placeholder="答えを入力" > 
-        <img class="button_image" :src="'./sousin.png'" alt="">
+        <img class="button_image" :src="'./buttons/sousin.png'" alt="">
     </div>
 </template>
 
@@ -31,7 +31,5 @@ input {
 .button_image {
     width: 30%;
 }
-
-
 
 </style>

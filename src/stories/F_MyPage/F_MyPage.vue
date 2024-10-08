@@ -33,6 +33,7 @@ const mainQuestCount = 3;
           <img class="button" width="80%" :src="'./buttons/qrwoyomu.png'" alt="">
         </v-col>
         <v-col cols="6" class="d-flex justify-center">
+          <!-- TODO：非活性のボタンは未実装 -->
           <img class="button" width="95%" :src="'./buttons/itemsorotta_before.png'" alt="">
         </v-col>
         <v-col cols="12" class="d-flex justify-center">

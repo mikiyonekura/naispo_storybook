@@ -6,7 +6,7 @@
 <template>
     <div class="header" >
         <img width="75%" :src="'midasi.png'" alt="">
-        <img width="20%" style="padding-top: 5%;" :src="'home.png'" alt="">
+        <img width="20%" style="padding-top: 5%;" :src="'./buttons/home.png'" alt="">
     </div>
 </template>
 

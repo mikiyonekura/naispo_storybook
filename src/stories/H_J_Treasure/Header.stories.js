@@ -2,7 +2,7 @@ import { fn } from '@storybook/test';
 import Header from './Header.vue';
 
 export default {
-  title: 'Example/Header',
+  title: 'H_J_Treasure/Header',
   component: Header,
   tags: ['autodocs'],
 };

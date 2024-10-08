@@ -1,9 +1,9 @@
 import { fn } from '@storybook/test';
-import Treasure from './Treasure.vue';
+import H_J_Treasure from './H_J_Treasure.vue';
 
 export default {
-  title: 'Example/Treasure',
-  component: Treasure,
+  title: 'H_J_Treasure/H_J_Treasure',
+  component: H_J_Treasure,
   tags: ['autodocs'],
   argTypes: {
     treasureType: {

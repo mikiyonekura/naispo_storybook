@@ -14,9 +14,9 @@ const props = defineProps({
 
 <template>
 
-  <v-container class="treasure_container" fluid>
+  <v-container class="treasure_container">
 
-    <v-row justify="center">
+    <v-row> 
       <v-col cols="12" class="text-center d-flex align-center">
         <Header />
       </v-col>
@@ -25,18 +25,18 @@ const props = defineProps({
       </v-col>
     </v-row>
 
-    <v-row justify="center" v-if="treasureType=='quest'">
-      <v-col cols="12">
+    <v-row v-if="treasureType=='quest'">
+      <v-col cols="12" class="pt-0">
         <AnswerForm />
       </v-col>
-      <v-col cols="12">
-        <img width="100%" :src="'./hint.png'" alt="">
+      <v-col cols="12" class="pt-0 px-2">
+        <img width="100%" :src="'./buttons/hint.png'" alt="">
       </v-col>
     </v-row>
 
-    <v-row justify="'center'" v-else>
+    <v-row v-else>
       <v-col cols="12">
-        <img width="100%" :src="'./toziru.png'">
+        <img width="100%" :src="'./buttons/toziru.png'">
       </v-col>
     </v-row>
 
@@ -48,10 +48,9 @@ const props = defineProps({
 .treasure_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 10%;
-  white-space: nowrap;
   background-color: #dfb069;
+  height: 100dvh;
 }
 
 .treasure_title {
@@ -61,4 +60,5 @@ const props = defineProps({
 .treasure_image {
   width: 100%;
 }
+
 </style>

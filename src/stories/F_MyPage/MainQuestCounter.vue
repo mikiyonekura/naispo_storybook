@@ -63,7 +63,7 @@ onMounted(() => {
   transform: translate(-50%, -50%);
   font-size: 50px;
   overflow: hidden;
-  color: #324b6d;
+  color: #ffffff;
 }
 
 .count {
