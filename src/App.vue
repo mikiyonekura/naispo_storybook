@@ -9,7 +9,7 @@ import A_Title from './stories/A_Title/A_Title.vue';
 <template>
     <!-- <A_Title /> -->
 
-    <!-- <E_K_Quote /> -->
+    <E_K_Quote />
    
     <!-- <Modal
       buttonText="aaa"
@@ -19,7 +19,7 @@ import A_Title from './stories/A_Title/A_Title.vue';
       title="ss"
     /> -->
 
-    <F_MyPage />
+    <!-- <F_MyPage /> -->
 
 </template>
 

@@ -28,7 +28,7 @@ function changeText() {
 
 <template>
     <div class="quote_container">
-        <v-container class="pt-15">
+        <v-container class="pt-15 quote_container">
             <v-row>
                 <v-col cols="12" class="d-flex justify-center">
                     <img width="80%" :src="'./nasura_1.png'">               
@@ -64,7 +64,7 @@ function changeText() {
 <style>
 
 .quote_container {
-  height: 100svh;
+  height: 100dvh;
   background-color: #dfb069;
   font-size: v-bind(fontSize);
 }

@@ -25,7 +25,7 @@ input {
     border: 1px solid #ddd;
     border-radius: 10px;
     font-family: 'DotGothic16', sans-serif;
-    background-color: #fffafa;
+    background-color: #ffffff;
 }
 
 .button_image {

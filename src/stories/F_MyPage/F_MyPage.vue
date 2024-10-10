@@ -69,6 +69,6 @@ const mainQuestCount = 3;
 }
 
 .button {
-  filter: drop-shadow(3px 3px 3px rgba(43, 34, 34, 3.5));
+  filter: drop-shadow(1px 1px 1px rgba(43, 34, 34, 3.5));
 }
 </style>
