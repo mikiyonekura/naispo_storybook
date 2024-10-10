@@ -6,21 +6,30 @@ export default {
   component: Modal,
   tags: ['autodocs'],
   argTypes: {
-    fontSize: { control: 'text' }, 
+    titleFontSize: { control: 'text' }, 
+    textFontSize: { control: 'text' },
     title: { control: 'text' },
     text: { control: 'text' },
-    buttonText: { control: 'text' },
-    image: { control: 'text' },
+    image: {
+      options: ['nasura_1.png', 'nasura_2.png', 'nasura_3.png'],
+      control: { type: 'radio' },
+    },
   },
-  // args: { onClick: fn() },
+  parameters: {
+    docs: {
+      description: {
+        component: 'フォントサイズやテキスト，画像等を指定してモーダルを変更可能',
+      },
+    },
+  },
 };
 
 export const Default = {
   args: {
-    fontSize: '25px',
+    titleFontSize: '20px',
+    textFontSize: '15px',
     title: 'タイトルを入力',
     text: 'テキストを入力',
-    buttonText: 'ボタンのテキストを入力',
     image: 'nasura_1.png',
     
   },
@@ -28,10 +37,10 @@ export const Default = {
 
 export const noImage = {
   args: {
-    fontSize: '25px',
+    titleFontSize: '20px',
+    textFontSize: '15px',
     title: 'タイトルを入力',
     text: 'テキストを入力',
-    buttonText: 'ボタンのテキストを入力',
     image: '',
   },
 };

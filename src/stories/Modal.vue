@@ -10,13 +10,17 @@ const props = defineProps({
     type: String,
     default: 'タイトルを入力'
   },
-  buttonText: {
-    type: String,
-    default: 'ボタンのテキストを入力'
-  },
   image: {
     type: String,
     default: 'nasura_1.png'
+  },
+  titleFontSize: {
+    type: String,
+    default: '10px'
+  },
+  textFontSize: {
+    type: String,
+    default: '10px'
   },
 });
 
@@ -54,11 +58,13 @@ const imgPath = './';
   font-size: 15px;
   font-weight: bold;
   text-align: center;
+  font-size: v-bind(titleFontSize);
 }
 
 .modal-text {
   font-size: 10px;
   text-align: center;
+  font-size: v-bind(textFontSize);
 }
 
 .modal {
