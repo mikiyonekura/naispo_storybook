@@ -71,7 +71,7 @@ const imgPath = './';
   width: 50%;     
   z-index: 1000;
   background-color: #dfb069;
-  height: 50dvh;
+ 
 }
 
 .modal-image {
